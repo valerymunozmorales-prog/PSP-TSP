@@ -351,24 +351,7 @@ margin:0;
     height: 150px;
     display: block;
 }
-.imagen-proyecto h3 {
-    margin-top: 15px;
-    color: #526571;
-    font-size: 16px;
-    font-weight: 400;
-}
-.imagen-proyecto p {
-    margin-top: 5px;
-    color: #888888;
-    font-size: 11px;
-    line-height: 1.6;
-}
-.ventajas-desventajas {
-    padding: 70px 9%;
-    background: #ffffff;
-    margin-top: -50px;
-}
-.titulo-seccion{
+tulo-seccion{
     text-align: center;
     margin-bottom: 25px;
     margin-top: 35px;

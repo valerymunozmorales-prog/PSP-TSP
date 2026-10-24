@@ -225,7 +225,6 @@ color: #ffffff;
     font-size: 14px;
     line-height: 1.6;
 }
-
 .leermas{
     display: inline-block;
     width: 122px;
@@ -236,9 +235,255 @@ color: #ffffff;
     border: 1px solid #70b8e5;
     border-radius: 4px;
     font-size: 13px;
+     font-weight: bold;
+}
+.seccion-gris{
+    padding: 40px, 60px;
+}
+.contenido-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.titulo h2{
+color: #526571;
+font-size: 28px;
+margin:0;
+}
+.contenido-tabla {
+    padding: 25px;
+    background: #f8f8f8;
+    border-left: 6px solid #9acb29;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+.contenido-tabla h3 {
+    color: #526571;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px;
+}
+.contenido-tabla p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 20px;
+}
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista li {
+    padding: 10px 0;
+    color: #777777;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.lista li::before {
+    content: "✓";
+    color: #9acb29;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.tabla-comparar {
+    width: 100%;
+    border: 1px solid #cfdde6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #ffffff;
+    border-top: 1px solid #dfe8ed;
+    color: #777777;
+    font-size: 13px;
+}
+
+.tabla-fila:first-child {
+    background: #dcecf5;
+    color: #526571;
     font-weight: bold;
 }
-.leermas:hover{
-    background-color: white;
 
+.tabla-fila:nth-child(even) {
+    background: #f5f9fb;
+}
+
+.tabla-fila div {
+    padding: 14px 20px;
+    border-right: 1px solid #dfe8ed;
+}
+
+.tabla-fila div:last-child {
+    border-right: none;
+}
+.proyectos {
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.galeria-psp-tsp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 35px;
+}
+.imagen-proyecto {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+.imagen-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+.imagen-proyecto img {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+.imagen-proyecto h3 {
+    margin-top: 15px;
+    color: #526571;
+    font-size: 16px;
+    font-weight: 400;
+}
+.imagen-proyecto p {
+    margin-top: 5px;
+    color: #888888;
+    font-size: 11px;
+    line-height: 1.6;
+}
+.ventajas-desventajas {
+    padding: 70px 9%;
+    background: #ffffff;
+    margin-top: -50px;
+}
+.titulo-seccion{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.contenedor-ventajas-desventajas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-top: 40px;
+}
+.columna-ventajas,
+.columna-desventajas {
+    padding: 10px 20px;
+}
+.columna-ventajas h3,
+.columna-desventajas h3 {
+    color: #526571;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.elemento-ventaja,
+.elemento-desventaja {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 10px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.tarjeta-numero {
+    color: #d37e1c;
+    font-size: 20px;
+    font-weight: 600;
+}
+.elemento-ventaja h4,
+.elemento-desventaja h4 {
+    color: #526571;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.elemento-ventaja p,
+.elemento-desventaja p {
+    color: #888888;
+    font-size: 12px;
+    line-height: 1.7;
+}
+footer {
+    width: 82%;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-top: 1px solid #dddddd;
+    margin-top: 20px;
+}
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto p {
+    color: #888888;
+    font-size: 12px;
+}   
+.logos{
+    margin-left: 85%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+
+    .navbar,
+    .hero-content,
+    .intro,
+    .content-section,
+    .comparison,
+    .advantages,
+    footer {
+
+        width: 90%;
+    }
+
+
+    .gray-section,
+    .disadvantages {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .hero-content {
+
+        grid-template-columns: 40% 60%;
+    }
+
+
+    .phone-image {
+
+        width: 290px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 32px;
+    }
+
+
+    .advantages-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
 }

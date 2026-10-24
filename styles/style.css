@@ -110,6 +110,7 @@ color: #ffffff;
 .botones {
     display: flex;
     gap: 12px;
+    align-items: center;
 }
 .boton {
     display:flex;
@@ -131,7 +132,27 @@ color: #ffffff;
     transition: 0.3s;
 }
 .boton:hover {
-    background-color: #edfaff;
+    background-color: linear-gradient(to bottom, #278bc8, #1f6fa3); 
+}
+.or{
+    color: white;
+    font-size: 13px;
+}
+.boton-secundario,
+.boton-secundario:hover {
+    width: auto;
+    height: auto;
+    line-height: normal;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.boton-secundario:hover {
+    color: #cfe8f6;
 }
 .franja-logotipos {
     width: 100%;
@@ -225,17 +246,56 @@ color: #ffffff;
     font-size: 14px;
     line-height: 1.6;
 }
-.leermas{
+html {
+    scroll-behavior: smooth;
+}
+
+.seccion-detalle {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 25px 30px;
+    background: #f5f9fb;
+    border: 1px solid #cfdde6;
+    border-left: 5px solid #58a9dc;
+    border-radius: 8px;
+}
+
+.seccion-detalle h2 {
+    margin: 0 0 10px;
+    color: #50616f;
+    font-size: 24px;
+    font-weight: 400;
+}
+.seccion-detalle p {
+    margin: 0;
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.seccion-detalle:target {
+    background: #ffffff;
+    border-left-color: #398dca;
+    box-shadow: 0 4px 12px rgba(57, 141, 202, 0.2);
+}
+.leermas {
     display: inline-block;
     width: 122px;
     height: 43px;
     line-height: 43px;
+    text-align: center;
+    text-decoration: none;
     background: linear-gradient(to bottom, #58a9dc, #398dca);
     color: white;
     border: 1px solid #70b8e5;
     border-radius: 4px;
     font-size: 13px;
-     font-weight: bold;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.leermas:hover {
+    background: linear-gradient(to bottom, #398dca, #2a73ab);
+    border-color: #2a73ab;
 }
 .seccion-gris{
     padding: 40px, 60px;
@@ -292,12 +352,13 @@ margin:0;
     margin-right: 10px;
 }
 .tabla-comparar {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid #cfdde6;
     border-radius: 8px;
+    font-size: 13px;
     overflow: hidden;
 }
-
 .tabla-fila {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -306,7 +367,6 @@ margin:0;
     color: #777777;
     font-size: 13px;
 }
-
 .tabla-fila:first-child {
     background: #dcecf5;
     color: #526571;
@@ -351,7 +411,24 @@ margin:0;
     height: 150px;
     display: block;
 }
-tulo-seccion{
+.imagen-proyecto h3 {
+    margin-top: 15px;
+    color: #526571;
+    font-size: 16px;
+    font-weight: 400;
+}
+.imagen-proyecto p {
+    margin-top: 5px;
+    color: #888888;
+    font-size: 11px;
+    line-height: 1.6;
+}
+.ventajas-desventajas {
+    padding: 70px 9%;
+    background: #ffffff;
+    margin-top: -50px;
+}
+.titulo-seccion{
     text-align: center;
     margin-bottom: 25px;
     margin-top: 35px;
@@ -402,11 +479,26 @@ tulo-seccion{
     line-height: 1.7;
 }
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 82%;
     margin: 0 auto;
     padding: 25px 0;
     border-top: 1px solid #dddddd;
     margin-top: 20px;
+}
+.copyright{
+    margin:0;
+}
+.logos{
+    display: flex;
+    gap: 6px;
+}
+.logos img{
+    display: block;
+    width: 38px;
+    height: 38px;
 }
 .contacto {
     display: flex;
@@ -417,12 +509,7 @@ footer {
     color: #888888;
     font-size: 12px;
 }   
-.logos{
-    margin-left: 85%;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
+
 @media screen and (max-width: 900px) {
 
     .navbar,

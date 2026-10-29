@@ -508,52 +508,142 @@ footer {
 .contacto p {
     color: #888888;
     font-size: 12px;
-}   
-
-@media screen and (max-width: 900px) {
-
-    .navbar,
-    .hero-content,
-    .intro,
-    .content-section,
-    .comparison,
-    .advantages,
-    footer {
-
+}
+@media (min-width: 352px) and (max-width: 480px) {
+    .encabezado {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .barra-navegacion {
+        width: 92%;
+        height: auto;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    .menu a {
+        padding: 6px 12px;
+    }
+    .contenido-principal {
+        width: 92%;
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .contenedor-celular {
+        height: auto;
+        margin-right: 0;
+    }
+    .contenedor-celular img {
+        width: 100%;
+        max-width: 260px;
+    }
+    .texto-principal {
+        padding-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    .texto-principal h1 {
+        font-size: 30px;
+    }
+    .texto-principal h2 {
+        font-size: 20px;
+    }
+    .texto-principal p {
+        max-width: 100%;
+    }
+    .botones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .franja-logotipos {
+        height: auto;
+        padding: 15px 0;
+    }
+    .contenedor-logotipos {
+        width: 92%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .contenedor-logotipos img {
+        width: 70px;
+        height: 42px;
+    }
+    .seccion-psp {
+        padding: 45px 0;
+    }
+    .seccion-psp h2 {
+        font-size: 28px;
+    }
+    .contenedor-tarjetas {
         width: 90%;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-
-
-    .gray-section,
-    .disadvantages {
-
-        padding-left: 5%;
-
-        padding-right: 5%;
+    .seccion-detalle {
+        margin: 25px 15px 0;
+        padding: 20px;
     }
-
-
-    .hero-content {
-
-        grid-template-columns: 40% 60%;
+    .seccion-gris {
+        padding: 20px 0;
     }
-
-
-    .phone-image {
-
-        width: 290px;
+    .contenido-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-
-
-    .hero-text h1 {
-
-        font-size: 32px;
+    .contenido-tabla {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
     }
-
-
-    .advantages-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
+    .contenido-tabla h3,
+    .contenido-tabla p {
+        margin: 12px;
+    }
+    .tabla-comparar {
+        width: 94%;
+        font-size: 11px;
+    }
+    .tabla-fila {
+        font-size: 11px;
+    }
+    .tabla-fila div {
+        padding: 10px 8px;
+    }
+    .proyectos {
+        padding: 30px 15px;
+    }
+    .galeria-psp-tsp {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .imagen-proyecto img {
+        height: 180px;
+    }
+    .ventajas-desventajas {
+        padding: 50px 5%;
+        margin-top: 0;
+    }
+    .contenedor-ventajas-desventajas {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .columna-ventajas,
+    .columna-desventajas {
+        padding: 10px 0;
+    }
+    footer {
+        width: 90%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
 }
+
+
